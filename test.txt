@@ -1,0 +1,18 @@
+ {
+    '*': 'mul',
+    '+': 'add',
+    '-': 'sub',
+    '/': 'div',
+    'sin': 'sin',
+    'cos': 'cos',
+    'tan': 'tan',
+    'jadir': 'hello world'
+,
+    'hello' : 'world'
+,
+    'somme' : 'sum'
+,
+    'moha' : 'azerty'
+,
+    'somme' : 'sum'
+}
