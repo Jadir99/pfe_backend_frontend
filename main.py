@@ -141,5 +141,5 @@ def open_functions():
 
 eel.init('web')
 # eel.start('/think.php')
-eel.start('/html/settings.html')
+eel.start('/html/postfixe_postscript.html')
 # eel.init('data' ,allowed_extensions=['.html', '.js' , 'css'])

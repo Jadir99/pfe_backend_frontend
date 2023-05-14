@@ -10,9 +10,5 @@
 ,
     'hello' : 'world'
 ,
-    'somme' : 'sum'
-,
-    'moha' : 'azerty'
-,
-    'somme' : 'sum'
+    'somme' : 'sum'	
 }
