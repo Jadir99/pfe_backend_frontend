@@ -1,12 +1,8 @@
 import eel ,subprocess
 print("Hello, Jadir")
-@eel.expose
-def my_python_function(a, b):
-    return(a, b, a + b)
 
-@eel.expose
-def get_data():
-    return 'Hello, World!'
+
+
 
 @eel.expose
 def infix_to_postfix(infix):
@@ -80,27 +76,34 @@ def infix_to_postfix(infix):
 
         # Retourne la liste postfixe sous forme de chaîne de caractères
         return ' '.join(postfix)
+
 @eel.expose
 def postfix_postscript(postfixe):
-        # print("hello")
-        # Open the JSON file for reading
-        f= open('test.txt', 'r') 
-       
-        # Read the file contents into a string
-        contents = f.read()
-       
-        # Define the dictionary of operations
-        operations = eval(contents)
-        
 
-    # Convert the postfix expression to PostScript
-        postscript = []
-        for char in postfixe:
-            if char in operations:
-                postscript.append(operations[char])
-            else:
-                postscript.append(char)
-        return ''.join(postscript)
+
+    
+    postfixe = postfixe.split()
+    print(postfixe)
+
+    
+    # Open the JSON file for reading
+    f= open('functions.txt', 'r') 
+    
+    # Read the file contents into a string
+    contents = f.read()
+    
+    # Define the dictionary of operations
+    operations = eval(contents)
+    
+
+# Convert the postfix expression to PostScript
+    postscript = []
+    for char in postfixe:
+        if char in operations:
+            postscript.append(operations[char])
+        else:
+            postscript.append(char)
+    return ' '.join(postscript)
 
 
 
@@ -109,7 +112,7 @@ def postfix_postscript(postfixe):
 def add_function(key,value):
 
     # Read the test into a string
-    with open('test.txt', 'r') as f:
+    with open('functions.txt', 'r') as f:
         s = f.read()
 
     # Define the new key-value pair
@@ -123,7 +126,7 @@ def add_function(key,value):
     s = s[:last_bracket_index] + new_line
 
     # Write the modified string back to the test
-    with open('test.txt', 'w') as f:
+    with open('functions.txt', 'w') as f:
         f.write(s)
         f.close()
     return "succes"
@@ -131,15 +134,10 @@ def add_function(key,value):
 # open and edit functions 
 @eel.expose
 def open_functions():
-    filename = "test.txt"
+    filename = "functions.txt"
     subprocess.call(["notepad.exe", filename])
     return 1
 
 
-# eel.init('web')
-# eel.start('login.php')
-
 eel.init('web')
-# eel.start('/think.php')
-eel.start('/html/postfixe_postscript.html')
-# eel.init('data' ,allowed_extensions=['.html', '.js' , 'css'])
+eel.start('/html/index.html')

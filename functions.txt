@@ -11,4 +11,6 @@
     'hello' : 'world'
 ,
     'somme' : 'sum'	
+,
+    'KIDAYR' : 'CV'
 }
