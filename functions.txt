@@ -12,5 +12,11 @@
 ,
     'somme' : 'sum'	
 ,
-    'KIDAYR' : 'CV'
+    'moha' : 'hihi'
+,
+    'test' : 'kader'
+,
+    'kk' : 'qsdqsd'
+,
+    'multiple' : 'millllll'
 }
