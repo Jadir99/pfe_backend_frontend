@@ -1,9 +1,6 @@
 import eel ,subprocess
 print("Hello, Jadir")
 
-
-
-
 @eel.expose
 def infix_to_postfix(infix):
         # print ("jkjbk")
@@ -30,7 +27,7 @@ def infix_to_postfix(infix):
                     i += 1
 
                 # Si c'est une variable, on l'ajoute directement à la liste postfixe
-                if function == 'x':
+                if len(function)==1:
                     postfix.append(function)
                 # Sinon, c'est une fonction et on l'ajoute à la pile des opérateurs
                 else:

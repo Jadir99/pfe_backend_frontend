@@ -1,5 +1,7 @@
  {
     '*': 'mul',
+    '%': 'mod',
+    '^': 'exp',
     '+': 'add',
     '-': 'sub',
     '/': 'div',
@@ -11,12 +13,7 @@
     'hello' : 'world'
 ,
     'somme' : 'sum'	
+
 ,
-    'moha' : 'hihi'
-,
-    'test' : 'kader'
-,
-    'kk' : 'qsdqsd'
-,
-    'multiple' : 'millllll'
+    'arc' : 'test'
 }
