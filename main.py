@@ -27,7 +27,7 @@ def infix_to_postfix(infix):
                     i += 1
 
                 # Si c'est une variable, on l'ajoute directement à la liste postfixe
-                if len(function)==1:
+                if infix[i] != '(':
                     postfix.append(function)
                 # Sinon, c'est une fonction et on l'ajoute à la pile des opérateurs
                 else:
