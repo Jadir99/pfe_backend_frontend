@@ -141,7 +141,7 @@
                     <!-- <div class="card-header d-flex justify-content-between align-items-center">
                       <h2 class="mb-0 text-center">What is infix and postfix expression?</h2>
                     </div> -->
-                    <h4 class="fw-bold py-3 mb-4 text-center pt-5 pb-0"><span class="text-muted fw-light">CalcPfe/</span> Calculatrice d'infixe à postfixe</h4>
+                    <h4 class="fw-bold py-3 mb-4 text-center pt-5 pb-0"><span class="text-muted fw-light">CalcPfe/</span> Calculatrice d'infixe à postscript</h4>
 
                     <div class="accordion mt-3 p-5 pb-0 pt-3" id="accordionExample">
                       <div class="card accordion-item active">
@@ -154,7 +154,7 @@
                             aria-expanded="true"
                             aria-controls="accordionOne"
                           >
-                          <h4 class="mb-0 text-center">Qu'est-ce qu'une expression postfixe et infixe ?</h4>
+                          <h4 class="mb-0 text-center">Qu'est-ce qu'une expression infixe et postscript ?</h4>
                           </button>
                         </h2>
 
@@ -164,11 +164,12 @@
                           data-bs-parent="#accordionExample"
                         >
                           <div class="accordion-body display-7">
-                            En programmation, une expression infixée est une expression où les opérateurs sont placés entre les opérandes. Par exemple, "3 + 4" est une expression infixée, où l'opérateur "+" est placé entre les opérandes "3" et "4".
-
-En revanche, une expression postfixée est une expression où les opérateurs sont placés après les opérandes. Par exemple, l'expression "3 4 +" est une expression postfixée équivalente à l'expression infixée "3 + 4".
-
-L'évaluation d'une expression postfixée est souvent effectuée à l'aide d'une pile (stack), tandis que l'évaluation d'une expression infixée nécessite souvent l'utilisation de règles de priorité d'opérateurs et de parenthèses pour déterminer l'ordre d'évaluation des opérations.
+                           
+                            La notation infixe est une méthode d'écriture où les opérateurs sont placés entre les opérandes, 
+                            tandis que la notation postscript (postfixe) est une méthode où les opérateurs suivent les opérandes. 
+                            Par exemple, l'expression "2 + 3 / 9" en notation postscript serait représentée comme "2 3 9 / +". La 
+                            notation postscript évite l'utilisation de parenthèses et permet une évaluation directe en utilisant
+                            une pile (stack).
                           </div>
                         </div>
                       </div>
@@ -177,19 +178,19 @@ L'évaluation d'une expression postfixée est souvent effectuée à l'aide d'une
                     <div class="accordion  mt-0 p-5 pt-3" id="accordionExample">
                       <form>
                         <div class="card mb-4">
-                          <h5 class="card-header">Infix expression</h5>
+                          <h5 class="card-header"> Expression Infix</h5>
                           <div class="card-body">
                             <div>
                               <div class="input-group">
-                                <textarea class="form-control" aria-label="With textarea" placeholder="The expression"rows="4" id="infixe"></textarea>
+                                <textarea class="form-control" aria-label="With textarea" placeholder="L'expression"rows="4" id="infixe"></textarea>
                               </div>
                             </div>
                           </div>
-                          <h5 class="card-header">postfixe expression</h5>
+                          <h5 class="card-header"> Expression Postscript</h5>
                           <div class="card-body">
                             <div>
                               <div class="input-group" >
-                                <textarea class="form-control" aria-label="With textarea " placeholder="The result" rows="4" readonly id="postfixe"></textarea>
+                                <textarea class="form-control" aria-label="With textarea " placeholder="Le résultat" rows="4" readonly id="postfixe"></textarea>
                                 
                               </div>
                             </div>
