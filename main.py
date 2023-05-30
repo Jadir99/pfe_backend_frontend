@@ -105,6 +105,12 @@ def postfix_postscript(postfixe):
             postscript.append(char)
     return ' '.join(postscript)
 
+@eel.expose
+def infix_to_postscript(infix):
+    postfixe=infix_to_postfix(infix)
+    postscript=postfix_postscript(postfixe)
+    return postscript
+
 
 
 # function pour difier le fichier des functions 
