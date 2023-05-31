@@ -240,6 +240,12 @@ L'évaluation d'une expression postfixée est souvent effectuée à l'aide d'une
         });
 
       }
+      document.addEventListener('keydown', function(event) {
+        if (event.keyCode === 13) {
+          infix_topostfixe();
+        }
+      });
+
       
       
     </script>

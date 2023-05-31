@@ -16,6 +16,4 @@
 
 ,
     'arc' : 'test'
-,
-    'testmllo' : 'azdsfgvhdfxfc'
 }

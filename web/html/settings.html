@@ -243,6 +243,16 @@
         });
 
       }
+      infixe.addEventListener('keydown', function(event) {
+        if (event.keyCode === 13) {
+            add_function();
+        }
+       });
+       postscript.addEventListener('keydown', function(event) {
+        if (event.keyCode === 13) {
+            add_function();
+        }
+       });
       // envoyer infixe en potsfixe
       function edit_functions() {
         eel.open_functions()(function(result) {
@@ -250,6 +260,7 @@
         });
 
       }
+      
     
       
     </script>
