@@ -3,7 +3,6 @@ print("Hello, Jadir")
 
 @eel.expose
 def infix_to_postfix(infix):
-        # print ("jkjbk")
         # Dictionnaire pour stocker les priorités des opérateurs
         priorite = {'+':1, '-':1, '*':2, '/':2, '^':3}
 

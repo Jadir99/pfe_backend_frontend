@@ -237,7 +237,13 @@
   // envoyer infixe en potsfixe
       function add_function() {
         eel.add_function(infixe.value,postscript.value)(function(result) {
-          if(result) alert("succes");
+            if(result) {
+                Swal.fire(
+              'Bon travail!',
+              'Vous enregistrez les fonctions!',
+              'success'
+            )
+          }
           infixe.value="";
           postscript.value="";
         });
@@ -266,6 +272,7 @@
     </script>
     <!-- Core JS -->
     <!-- build:js assets/vendor/js/core.js -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../assets/vendor/libs/jquery/jquery.js"></script>
     <script src="../assets/vendor/libs/popper/popper.js"></script>
     <script src="../assets/vendor/js/bootstrap.js"></script>
